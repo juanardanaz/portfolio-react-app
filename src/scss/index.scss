@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'config/variables';
+@import 'base/base';
+@import 'components/home';
+@import 'components/navbar';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/work';
+@import 'components/contact';
+
+
+

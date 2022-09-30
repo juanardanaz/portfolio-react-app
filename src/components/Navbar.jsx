@@ -4,74 +4,75 @@ import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import Logo from '../assets/logo_jc.png';
 import {Link} from 'react-scroll';
+import '../scss/components/_navbar.scss';
 
 function Navbar() {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='navbar-section'>
         <div>
-            <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
+            <img src={Logo} alt="Logo Image" className='navbar-logo' />
         </div>
 
         {/* Menu */}
-        <ul className='hidden md:flex'>
+        <ul className='navbar-menu'>
             <li>
-                <Link to="home" smooth={true} duration={500}>
+                <Link to="home" smooth={true} duration={500} className='navbar-link'>
                     Home
                 </Link>
             </li>
             <li>
-                <Link to="about" smooth={true} duration={500}>
+                <Link to="about" smooth={true} duration={500} className='navbar-link'>
                     About
                 </Link>
             </li>
             <li>
-                <Link to="skills" smooth={true} duration={500}>
+                <Link to="skills" smooth={true} duration={500} className='navbar-link'>
                     Skills
                 </Link>
             </li>
             <li>
-                <Link to="work" smooth={true} duration={500}>
+                <Link to="work" smooth={true} duration={500} className='navbar-link'>
                     Work
                 </Link>
             </li>
             <li>
-                <Link to="contact" smooth={true} duration={500}>
+                <Link to="contact" smooth={true} duration={500} className='navbar-link'>
                     Contact
                 </Link>
             </li>
         </ul>
 
         {/* Hamburger */}
-        <div onClick={handleClick} className='md:hidden z-10'>
+        <div onClick={handleClick} className='navbar-hamburger'>
             {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
         {/* Mobile Menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>
+        <ul className={!nav ? 'hidden' : 'navbar-mobile-menu'}>
+            <li className='navbar-mobile-list'>
                 <Link to="home" smooth={true} duration={500} onClick={handleClick}>
                     Home
                 </Link>
             </li>
-            <li className='py-6 text-4xl'>
+            <li className='navbar-mobile-list'>
                 <Link to="about" smooth={true} duration={500} onClick={handleClick}>
                     About
                 </Link>
             </li>
-            <li className='py-6 text-4xl'>
+            <li className='navbar-mobile-list'>
                 <Link to="skills" smooth={true} duration={500} onClick={handleClick}>
                     Skills
                 </Link>
             </li>
-            <li className='py-6 text-4xl'>
+            <li className='navbar-mobile-list'>
                 <Link to="work" smooth={true} duration={500} onClick={handleClick}>
                     Work
                 </Link>
             </li>
-            <li className='py-6 text-4xl'>
+            <li className='navbar-mobile-list'>
                 <Link to="contact" smooth={true} duration={500} onClick={handleClick}>
                     Contact
                 </Link>
@@ -79,28 +80,28 @@ function Navbar() {
         </ul>
 
         {/* Social Icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='navbar-social-menu'>
             <ul>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500'>
-                    <a href="/" className='flex justify-between items-center w-full text-gray-300'>
+                <li className='navbar-social-list linkedin'>
+                    <a href="/" className='navbar-social-link'>
                         LinkedIn <FaLinkedin size={30} />
                     </a>
                 </li>
 
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-                    <a href="/" className='flex justify-between items-center w-full text-gray-300'>
+                <li className='navbar-social-list github'>
+                    <a href="/" className='navbar-social-link'>
                         Github <FaGithub size={30} />
                     </a>
                 </li>
 
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-                    <a href="/" className='flex justify-between items-center w-full text-gray-300'>
+                <li className='navbar-social-list email'>
+                    <a href="/" className='navbar-social-link'>
                         Email <HiOutlineMail size={30} />
                     </a>
                 </li>
 
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                    <a href="/" className='flex justify-between items-center w-full text-gray-300'>
+                <li className='navbar-social-list resume'>
+                    <a href="/" className='navbar-social-link'>
                         Resume <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>

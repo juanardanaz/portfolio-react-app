@@ -1,0 +1,89 @@
+/* ========= FONT ========= */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-Black.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========= VARIABLES CSS ========= */
+:root {
+    /* ========= COLORS ========= */
+    --bg-dark-color: #0a182e;
+    --bg-darker-color: #0a192f;
+    --bg-white-color: #cbd5f6;
+    --text-gray-color: #d1d5db;
+    --text-gray-darker: #8892b0;
+    --text-white-color: #ffffff;
+    --text-purple-color: #ccd6f6;
+    --border-pink: hsl(333, 71%, 51%);
+    --bg-blue: hsl(217, 91%, 60%);
+    --bg-brown: hsl(0, 0%, 20%);
+    --bg-green: hsl(167, 40%, 60%);
+    --bg-gray-light: hsl(212, 10%, 37%);
+    --shadow: hsl(213, 69%, 5%);
+
+    /* ========= FONT and TYPOGRAPHY ========= */
+    --body-font-a: 'Raleway';
+}
+
+
+
+
+
