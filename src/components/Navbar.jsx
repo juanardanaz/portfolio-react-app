@@ -11,35 +11,32 @@ function Navbar() {
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='navbar-section'>
+    <div className='navbar-section' name='header'>
         <div>
-            <img src={Logo} alt="Logo Image" className='navbar-logo' />
+            <Link to="home" spy={true} smooth={true} duration={500}>
+                <img src={Logo} alt="logo" className='navbar-logo' />
+            </Link>
         </div>
 
-        {/* Menu */}
+        {/*Menu*/}
         <ul className='navbar-menu'>
             <li>
-                <Link to="home" smooth={true} duration={500} className='navbar-link'>
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link to="about" smooth={true} duration={500} className='navbar-link'>
+                <Link to="about" spy={true} smooth={true} duration={500} className='navbar-link'>
                     About
                 </Link>
             </li>
             <li>
-                <Link to="skills" smooth={true} duration={500} className='navbar-link'>
-                    Skills
+                <Link to="testimonials" spy={true} smooth={true} duration={500} className='navbar-link'>
+                    Testimonials
                 </Link>
             </li>
             <li>
-                <Link to="work" smooth={true} duration={500} className='navbar-link'>
+                <Link to="work" spy={true} smooth={true} duration={500} className='navbar-link'>
                     Work
                 </Link>
             </li>
             <li>
-                <Link to="contact" smooth={true} duration={500} className='navbar-link'>
+                <Link to="contact" spy={true} smooth={true} duration={500} className='navbar-link'>
                     Contact
                 </Link>
             </li>
@@ -53,18 +50,13 @@ function Navbar() {
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'navbar-mobile-menu'}>
             <li className='navbar-mobile-list'>
-                <Link to="home" smooth={true} duration={500} onClick={handleClick}>
-                    Home
-                </Link>
-            </li>
-            <li className='navbar-mobile-list'>
                 <Link to="about" smooth={true} duration={500} onClick={handleClick}>
                     About
                 </Link>
             </li>
             <li className='navbar-mobile-list'>
-                <Link to="skills" smooth={true} duration={500} onClick={handleClick}>
-                    Skills
+                <Link to="testimonials" smooth={true} duration={500} onClick={handleClick}>
+                    Testimonials
                 </Link>
             </li>
             <li className='navbar-mobile-list'>

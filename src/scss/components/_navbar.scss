@@ -11,6 +11,7 @@
         padding-right: 1rem/* 16px */;
         background-color: var(--bg-darker-color);
         color: var(--text-gray-color);
+        z-index: 10;
     }
 
     &-logo {
@@ -61,6 +62,7 @@
         justify-content: space-between;
         align-items: center;
         margin-left: -100px;
+        transition-duration: 300ms;
 
         &:hover {
             margin-left: -10px;
@@ -75,6 +77,10 @@
         width: 100%;
         color: var(--text-gray-color);
     }
+}
+
+.hidden {
+    display: none;
 }
 
 .linkedin {

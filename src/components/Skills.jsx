@@ -17,7 +17,7 @@ const Skills = () => {
         <div className='skills-container'>
             <div>
                 <p className='skills-title'>Skills</p>
-                <p className='skills-description'>//Technologies I work with</p>
+                <p className='skills-description'>Technologies I work with</p>
             </div>
 
             <div className='skills-list-container'>

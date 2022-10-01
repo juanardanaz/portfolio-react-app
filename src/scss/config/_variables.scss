@@ -78,9 +78,21 @@
     --bg-green: hsl(167, 40%, 60%);
     --bg-gray-light: hsl(212, 10%, 37%);
     --shadow: hsl(213, 69%, 5%);
+    --testimonial-card: hsl(219, 32%, 12%);
+    --first-color: hsl(210, 98%, 33%);
 
     /* ========= FONT and TYPOGRAPHY ========= */
     --body-font-a: 'Raleway';
+
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --biggest-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
 }
 
 

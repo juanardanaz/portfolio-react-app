@@ -45,7 +45,7 @@
 
     &-button {
         color: var(--text-white-color);
-        border-width: 2px;
+        border: 2px solid white;
         padding-left: 1.5rem/* 24px */;
         padding-right: 1.5rem/* 24px */;
         padding-top: 0.75rem/* 12px */;
@@ -54,6 +54,10 @@
         margin-bottom: 0.5rem/* 8px */;
         display: flex;
         align-items: center;
+        font-weight: 700;
+        font-family: var(--body-font-a);
+        background-color: transparent;
+        font-size: 15px;
 
         &:hover {
             background-color: var(--border-pink);

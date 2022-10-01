@@ -1,5 +1,4 @@
 import React from 'react';
-import {HiArrowNarrowRight} from 'react-icons/hi';
 import '../scss/components/_home.scss';
 
 const Home = () => {
@@ -15,14 +14,7 @@ const Home = () => {
                 Interested in design and animation, technology and always open to book recommendations.
             </p>
 
-            <div>
-                <button className='home-button group'>
-                    View Work 
-                    <span className='group-hover:rotate-90 duration-300'>
-                        <HiArrowNarrowRight className='ml-3 hover:'/>
-                    </span>
-                </button>
-            </div>
+            <button className='home-button'> View Work </button>
 
         </div>
     </div>
