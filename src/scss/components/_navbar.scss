@@ -1,0 +1,117 @@
+/* ========= NAVBAR ========= */
+.navbar {
+    &-section {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem/* 16px */;
+        padding-right: 1rem/* 16px */;
+        background-color: var(--bg-darker-color);
+        color: var(--text-gray-color);
+        z-index: 10;
+    }
+
+    &-logo {
+        width: 50px;
+        height: auto;
+    }
+
+    &-menu {
+        display: none;
+    }
+
+    &-hamburger {
+        z-index: 10;
+    }
+
+    &-mobile-menu {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-darker-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-mobile-list {
+        padding-top: 1.5rem/* 24px */;
+        padding-bottom: 1.5rem/* 24px */;
+        font-size: 2.25rem/* 36px */;
+        line-height: 2.5rem/* 40px */;
+    }
+
+    &-social-menu {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        top: 35%;
+        left: 0px;
+    }
+
+    &-social-list {
+        width: 160px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -100px;
+        transition-duration: 300ms;
+
+        &:hover {
+            margin-left: -10px;
+            transition-duration: 300ms;
+        }
+    }
+
+    &-social-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: var(--text-gray-color);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.linkedin {
+    background-color: var(--bg-blue);
+}
+
+.github {
+    background-color: var(--bg-brown);
+}
+
+.email {
+    background-color: var(--bg-green);
+}
+
+.resume {
+    background-color: var(--bg-gray-light);
+}
+
+
+@media (min-width: 768px) {
+    .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-hamburger {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-social-menu {
+        display: flex;
+    }
+}

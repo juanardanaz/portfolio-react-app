@@ -1,0 +1,56 @@
+/* ========= TESTIMONIAL ========= */
+.testimonial {
+    &-section {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-darker-color);
+        color: var(--text-gray-color);
+        padding-top: 1rem/* 16px */;
+        padding-bottom: 1rem/* 16px */;
+    }
+
+    &-container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem/* 16px */;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-title {
+        font-size: 2.25rem/* 36px */;
+        line-height: 2.5rem/* 40px */;
+        font-weight: 700;
+        display: inline;
+        border-bottom-width: 4px;
+        border-color: var(--border-pink);
+    }
+
+    &-description {
+        padding: 1rem/* 16px */;
+    }
+
+    &-card {
+        background-color: var(--testimonial-card);
+        padding: 1.25rem 1.5rem;
+        border-radius: 1.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+    }
+
+    &-img {
+        width: 60px;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .skills-list-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

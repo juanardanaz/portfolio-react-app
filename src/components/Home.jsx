@@ -1,27 +1,20 @@
 import React from 'react';
-import {HiArrowNarrowRight} from 'react-icons/hi';
+import '../scss/components/_home.scss';
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen bg-[#0a192f]'>
+    <div name='home' className='home-section'>
 
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-            <p className='text-pink-600'>Hi, my name is</p>
-            <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Juan Cruz Ardanaz</h1>
-            <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>I'm a Multimedia Designer</h2>
-            <p className='text-[#8892b0] py-4 max-w-[700px]'>A Multimedia Designer, hailing from Argentina. 
+        <div className='home-container'>
+            <p className='home-intro'>Hi, my name is</p>
+            <h1 className='home-title'>Juan Cruz Ardanaz</h1>
+            <h2 className='home-subtitle'>I'm a Multimedia Designer</h2>
+            <p className='home-description'>A Multimedia Designer, hailing from Argentina. 
                 Interested in design and animation, technology and always open to book recommendations.
             </p>
 
-            <div>
-                <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-                    View Work 
-                    <span className='group-hover:rotate-90 duration-300'>
-                        <HiArrowNarrowRight className='ml-3 hover:'/>
-                    </span>
-                </button>
-            </div>
+            <button className='home-button'> View Work </button>
 
         </div>
     </div>

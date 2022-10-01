@@ -7,50 +7,51 @@ import Node from '../assets/node.png';
 import AWS from '../assets/aws.png';
 import GitHub from '../assets/github.png';
 import Mongo from '../assets/mongo.png';
+import '../scss/components/_skills.scss';
 
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300 py-4'>
+    <div name='skills' className='skills-section'>
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='skills-container'>
             <div>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Skills</p>
-                <p className='p-4'>//Technologies I work with</p>
+                <p className='skills-title'>Skills</p>
+                <p className='skills-description'>Technologies I work with</p>
             </div>
 
-            <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={HTML} alt="html icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>HTML</p>
+            <div className='skills-list-container'>
+                <div className='skills-list-box'>
+                    <img src={HTML} alt="html icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>HTML</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={CSS} alt="css icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>CSS</p>
+                <div className='skills-list-box'>
+                    <img src={CSS} alt="css icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>CSS</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={JavaScript} alt="javascript icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>JAVASCRIPT</p>
+                <div className='skills-list-box'>
+                    <img src={JavaScript} alt="javascript icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>JAVASCRIPT</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={ReactImg} alt="react icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>REACT</p>
+                <div className='skills-list-box'>
+                    <img src={ReactImg} alt="react icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>REACT</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={GitHub} alt="github icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>GITHUB</p>
+                <div className='skills-list-box'>
+                    <img src={GitHub} alt="github icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>GITHUB</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={Node} alt="node icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>NODE</p>
+                <div className='skills-list-box'>
+                    <img src={Node} alt="node icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>NODE</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={Mongo} alt="mongodb icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>MONGO DB</p>
+                <div className='skills-list-box'>
+                    <img src={Mongo} alt="mongodb icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>MONGO DB</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img src={AWS} alt="html icon" className='w-20 mx-auto'/>
-                    <p className='my-4'>AWS</p>
+                <div className='skills-list-box'>
+                    <img src={AWS} alt="html icon" className='skills-list-img'/>
+                    <p className='skills-list-text'>AWS</p>
                 </div>
             </div>
         </div>

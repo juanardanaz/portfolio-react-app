@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './scss/index.scss';
+import 'swiper/css/bundle';
+import 'swiper/css/grid';
 import App from './App';
 
 
